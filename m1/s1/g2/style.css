@@ -1,0 +1,40 @@
+h1{
+    font-size: 1.7em;
+    font-family:Arial;
+}
+#list ul{
+    font-size: 1.1em;
+    font-family: Arial;
+    list-style-type:none;
+    text-decoration:none;
+}
+#logo{
+    width: 35%;
+}
+
+#titolo-table{
+    font-size:1.6em;
+    font-family: Calibri;
+}
+
+h5{
+    font-size: 1.2em;
+    margin:0 0;
+}
+#titolo-correlato{
+    font-size: 1.6em;
+    margin:13px 0;
+
+}
+
+table{
+    width:35%;
+}
+
+.categoria{
+    margin:2px;
+}
+.data{
+    margin:2px;
+}
+

@@ -1,0 +1,30 @@
+#foto{
+    width: 25%;
+    
+}
+h1{
+    font-family: Arial;
+}
+#main p{
+    font-size: 1.3em;
+    margin: 6px;
+}
+p{
+    font-size: 1.5em;
+    margin:10px;
+}
+
+a{
+    font-size: 1.4em;
+}
+
+#footer{
+    font-size: 24px;
+    margin:0.5em 10px;
+    font-family: calibri;
+
+}
+
+ol,ul{
+    font-size: 1.3em;
+}

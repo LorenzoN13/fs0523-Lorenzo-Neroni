@@ -1,0 +1,26 @@
+header{
+    text-align: center;
+    margin: 0;
+}
+
+
+img{
+    width: 16%;
+    
+}
+#container{
+    margin:0 auto;
+}
+
+.mini-titolo{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid yellow;
+    text-align: center;
+    margin: 0;
+    
+}
+
+h1{
+    text-align: center;
+}
