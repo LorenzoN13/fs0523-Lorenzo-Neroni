@@ -1,26 +1,69 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin: 0;
+}
+
 header{
     text-align: center;
     margin: 0;
 }
 
 
-img{
-    width: 16%;
+#logo{
+    width: 10em;
     
 }
-#container{
-    margin:0 auto;
+
+#focaccia{
+    width: 100%;
+    border-radius: 10px;
+    
 }
+
+#container{
+    width:800px;
+    margin: 0 auto;
+}
+
+
 
 .mini-titolo{
-    display: flex;
-    align-items: center;
-    border-top: 2px solid yellow;
+    border-top: 1.5px solid yellow;
+    color:#083f87;
     text-align: center;
     margin: 0;
-    
+    background-color: rgba(248, 248, 136, 0.043);
+    padding: 1px;   
+}
+ 
+#container .sally{
+    text-align: center;
+    color: rgba(128, 128, 128, 0.498);
 }
 
-h1{
+#container .feat{
+    color: red;
+    margin: 0;
+    border-left: 1px solid yellow;
+    padding-left: 15px;
+    
+}
+#container .feat p{
+    margin: 0;
+}
+
+#container .titolo{
     text-align: center;
+}
+
+#container .titolo p{
+    text-align: left;
+}
+
+#container .ingredient{
+    border-bottom: 1px solid rgba(145, 239, 242, 0.532);
+    padding-bottom: 15px;
+
 }
