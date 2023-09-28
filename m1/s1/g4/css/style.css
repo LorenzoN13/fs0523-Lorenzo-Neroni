@@ -60,18 +60,35 @@ span{
 }
 
 #tabella{
-    border-bottom: 2px solid black;
-    height: 100%;
+    border-bottom: 2px solid rgb(19, 44, 184);
+    width: 100%;
 
 }
+#tabella tbody td{
+    padding: 26px;
+}
+
 
 #tabella .titolo-table{
-    border: 1px solid black;
+   padding: 16px;
 }
 
-#tabella th{
-    border: 1px solid black;
-
+#tabella thead th{
+    border: 1px solid rgb(7, 128, 241);
+    padding: 25px;
+    background-color: rgb(7, 128, 241);
 
 }
 
+#container ul, ol{
+    list-style-type: disc;
+}
+
+
+
+
+/*background-color.\rgb 192 192 192;
+border. 1px solid #808080;
+border-radius. 5px;
+padding. 2px;
+*/
