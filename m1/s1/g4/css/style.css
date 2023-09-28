@@ -56,13 +56,19 @@ span{
     margin-bottom: 20px;
 }
 
-#titolo-table{
+#tabella{
+    border-bottom: 2px solid black;
+    width: 10em;
+
+}
+
+#tabella .titolo-table{
+    border: 1px solid black;
+}
+
+#tabella th{
     border: 1px solid black;
 
-    
 
 }
 
-#titolo-table thead,tbody{
-    text-align: center;
-}
