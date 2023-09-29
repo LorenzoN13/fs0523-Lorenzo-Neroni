@@ -12,7 +12,7 @@ body{
 
 h1,h2{
     line-height: 1.5;
-    font-family: Monserrat;
+    font-family: Montserrat;
     font-weight: 600;
     color:#25a2c3;
 }
@@ -99,13 +99,13 @@ section h1{
 }
 
 article{
-    padding: 2em;
+    padding: 1em;
 }
 .images{
     width: 100%;  
 }
 .b-article{
-    border: 1px solid #393d412e;
+    border: 1px solid #dee1e3;
     border-radius: 5px;
     margin: 20px;
 }
@@ -113,3 +113,30 @@ article{
 .p-articol{
     padding: 25px;
 }
+
+footer{
+    background-color: #25a2c3;
+    padding: 2.5em;
+    text-align: center;
+    height: 10em;
+}
+a{
+    text-decoration: none;
+    color:#c8e7f0;
+
+}
+footer h1{
+    color: white;
+}
+ul{
+    list-style-type: none;
+    padding: 17px;
+ }
+
+footer p{
+    padding-top: 15px;
+    border-top: 1px solid #c8e7f0;
+    text-align: center;
+    padding-bottom: 12px;
+    color:#c8e7f0;
+ }
