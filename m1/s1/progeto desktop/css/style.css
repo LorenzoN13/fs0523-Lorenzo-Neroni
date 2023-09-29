@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color:#393d41;
+    text-align: center;
+    font-family: Open Sans;
+}
+
+h1,h2{
+    line-height: 1.5;
+    font-family: Montserrat;
+    font-weight: 600;
+    color:#25a2c3;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+main{
+   text-align: center;
+}
+
+header{
+    color: black;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: black;
+}
+
+header img{
+    width: 9em;
+    padding: 25px; 
+    display:flex;
+}
+
+#blocco-iniziale{
+    background-image: url(../images/banner.jpg);
+    margin: 0;
+    padding: 10em;
+    height: 9em;
+   
+}
+
+#blocco-iniziale h1{
+    padding: 6px;
+}
+
+#blocco-iniziale p{
+    padding: 30px;
+}
+
+#blocco-iniziale a{
+padding: 12px 20px 12px 20px;
+color: white;
+border: 1px solid #f04c2f;
+border-radius: 7px;
+background-color: #f04c2f;
+text-decoration: none;
+cursor:pointer;
+}
+.notebook{
+    border-radius: 100%;
+    display: flex;
+    
+    padding: 16px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.blocco-secondario{  
+    display: flex;
+    flex-flow: column wrap;
+    align-content:flex-end;
+    align-items: start;
+  
+}
+
+section{
+    background-color:#e22d0e;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+section p{
+padding: 0;
+margin: 0;
+}
+
+section span{
+    font-style:italic ;
+}
+
+section h1{
+    color: white;
+}
+
+article{
+    padding: 1em;
+}
+.images{
+    width: 100%;  
+}
+.b-article{
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.p-articol{
+    padding: 25px;
+}
+
+footer{
+    background-color: #25a2c3;
+    padding: 2.5em;
+    text-align: center;
+    height: 10em;
+}
+a{
+    text-decoration: none;
+    color:#c8e7f0;
+
+}
+footer h1{
+    color: white;
+}
+ul{
+    list-style-type: none;
+    padding: 17px;
+ }
+
+footer p{
+    padding-top: 15px;
+    border-top: 1px solid #c8e7f0;
+    text-align: center;
+    padding-bottom: 12px;
+    color:#c8e7f0;
+ }
