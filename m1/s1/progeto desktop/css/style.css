@@ -46,7 +46,7 @@ header img{
 #blocco-iniziale{
     background-image: url(../images/banner.jpg);
     margin: 0;
-    padding: 10em;
+    padding: 12em;
     height: 9em;
    
 }
@@ -78,6 +78,8 @@ cursor:pointer;
 #container{
     display: flex;
     justify-content: center;
+    padding: 5%;
+    margin-left: 3em;
 }
 
 
@@ -87,18 +89,27 @@ cursor:pointer;
     flex-flow: column wrap;
     align-content:flex-end;
     align-items: start;
+    margin-left: 2em;
+    margin-top: 5em;
   
 }
+
+#container .blocco-secondario h2{
+    margin-top: 10px;
+    padding: 10px;
+}
+
 
 section{
     background-color:#e22d0e;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 5em;
+    height: 9em;
 }
 section p{
-padding: 0;
-margin: 0;
+padding:0;
+margin-top: 0;
 }
 
 section span{
