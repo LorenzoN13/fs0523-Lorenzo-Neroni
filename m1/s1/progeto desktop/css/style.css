@@ -104,16 +104,16 @@ section{
     background-color:#e22d0e;
     color: white;
     text-align: center;
-    padding: 5em;
-    height: 9em;
+    padding: 4em;
+    height: 10em;
 }
 section p{
-padding:0;
+padding: ran0;
 margin-top: 0;
 }
 
-section span{
-    font-style:italic ;
+ section span{
+    font-style: italic;
 }
 
 section h1{
