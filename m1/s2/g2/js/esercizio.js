@@ -48,7 +48,7 @@ const number1 = 6;
 const number2 = 14;
 
 if (number1 === 8 ||number2 === 8 || number1 - number2 || number2 - number1) {
-  console.log( "Il valore ottenuto dall'addizione/sottrazione da come rislutato 8");
+  console.log( "Il valore che abbiamo inserito nell'addizione/sottrazione da come rislutato 8");
 }else{
   console.log("Nessun dei valori ottenuti sia con l'addizione che con la sottrazione da come risultato 8");
 }
@@ -161,9 +161,7 @@ const me = {
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
   
-    let numero = []
-
-    console.log(numero);
+    let numero = [];
 
     numero.push(1,2,3,4,5,6,7,8,9,10);
     
