@@ -44,7 +44,14 @@ function parametri(n2) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const number1 = 6;
+const number2 = 14;
+
+if (number1 === 8 ||number2 === 8 || number1 - number2 || number2 - number1) {
+  console.log( "Il valore ottenuto dall'addizione/sottrazione da come rislutato 8");
+}else{
+  console.log("Nessun dei valori ottenuti sia con l'addizione che con la sottrazione da come risultato 8");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -92,7 +99,10 @@ console.log(Array.isArray(number));
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numE = 20;
+let totale = numE % 2 === 0 ? "pari" : "dispari";
+
+console.log(totale);
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -106,14 +116,14 @@ console.log(Array.isArray(number));
     }
 */
 
-let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val > 5) {
-      console.log("Più di 5");
-    } else {
-      console.log("Minore di 10 e maggiore di 5");
-    }
+let val = 7;
+if (val >= 10) {
+  console.log("Uguale a 10 o maggiore");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Meno di 10");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -144,18 +154,8 @@ const me = {
   /* ESERCIZIO 13
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
   */
-   
-    {
-      const me = {
-        name: 'John',
-        lastName: 'Doe',
-        skills: ['javascript', 'html', 'css'],
-        cyty:'Torono',
-      }
-      delete me.skills(-1);
-  
+      me.skills.pop();
       console.log(me);
-    }
   
   /* ESERCIZIO 14
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
