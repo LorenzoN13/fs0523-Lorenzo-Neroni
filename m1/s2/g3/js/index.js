@@ -114,9 +114,12 @@ const starWarsCharacters = [
   */
     
     for (let i = 0; i < starWarsCharacters.length; i++) {
-        characters.push(starWarsCharacters.name)
+
+        characters.push(starWarsCharacters[i].name)
       }
-      
+      console.log(characters);
+
+a
   /* ESERCIZIO 3
     Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
   */
@@ -127,19 +130,20 @@ const starWarsCharacters = [
         femaleCharacters.push(starWarsCharacters)
   }
 }
+    
 
   /* ESERCIZIO 4
     Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
     Ad ognuna di queste proprietà assegna come valore un array vuoto.
   */
     
-    let eyeColor = {
-        blue : [],
+    const eyeColor = {
+        blue: [],
         yellow: [],
-        red: [],
         brown: [],
-        blue-gray: [],
-      }
+        red: [],
+        "blue-gray": []
+      };
 
   /* ESERCIZIO 5
     Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
