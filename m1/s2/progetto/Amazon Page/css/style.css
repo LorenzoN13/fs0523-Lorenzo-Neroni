@@ -1,0 +1,152 @@
+body{
+    font-size: 1.3rem;
+    line-height: 1.2; 
+    background-color:#E9EDEE ;
+    
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+span,h1,p{
+    font-family: Arial;
+}
+
+li, .bg-orange p{
+    font-family: Helvetica;
+}
+
+span, a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p,ul{
+    font-size: 1.3rem;
+}
+
+#bg-logo{
+    background-color: #222F3F;
+    width: 100%;
+}
+
+.logo{
+    width: 10rem;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#lista-navbar{
+    list-style-type: none;
+    background-color:#364759;  
+}
+
+li, .bg-orange, .text-bn {
+color: white;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 25px;
+    padding: 5px; 
+}
+
+li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+main{
+    margin: 25px;
+}
+
+main a{
+    color: #1B4E52;
+    text-decoration: none;
+}
+
+.bg-orange{
+    background-color:#F56600 ;
+    text-align: center;
+    padding: 5px;
+}
+
+#banner{
+    background-image: url(../images/bg-image.png);
+    height: 10rem;
+    background-position: center;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#banner .text-bn{
+    padding: 3rem;
+}
+
+.container{
+    background-color: white;
+    margin-top: 25px;
+}
+
+.container-text{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 0px;
+}
+
+.container-text p{
+    margin-right: 15px;
+}
+
+.images{
+    width: 26rem;
+    display: inline-block;
+    height: 28rem;
+    border-radius: 40px;
+    padding: 17px;
+}
+
+.sections{
+    margin-top: 30px;
+}
+
+.images-section{
+    width: 100%; 
+}
+
+.text-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text-section p{
+    margin-right: 15px;
+}
+
+.Back{
+    background-color:#364759;
+    height: 3rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.Back span a{
+    color: white;
+}
+
+footer{
+    background-color: #222F3F;
+    text-align: center;
+    height: 12em;
+    margin-top: 10px;
+}
+
+.image-foo{
+    width: 10rem;
+    padding: 3em;
+}
