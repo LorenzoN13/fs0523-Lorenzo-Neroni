@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(34deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(255,212,80,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.elenco{
+    padding: 10px;
+    background-color: rgba(24, 24, 24, 0);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#completato .elenco{
+    padding: 10px;
+    background-color: rgba(71, 70, 70, 0);
+    color:white;
+    text-decoration: line-through  black;
+}
+
+.container{
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 17px;
+    margin: 50px;
+    padding: 30px;
+}
+
+.container h1{
+    font-family: Orbitron,sans-serif;
+    font-weight: 900;
+}
+
+.box input{
+    width: 20em;
+    height: 3em;
+    text-align: center;
+}
+
+.box #bottone{
+    height: 3.5em;
+    width: 7em;
+    background-color: rgba(128, 128, 128, 0.458);
+}
+
+
