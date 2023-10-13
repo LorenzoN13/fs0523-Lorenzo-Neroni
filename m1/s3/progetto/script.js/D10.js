@@ -144,8 +144,8 @@ let email = "esempio@gmail.com";
 let email1 = "esempio-gmail";
 
 function isThisAnEmail(str) {
-  let regex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  return regex.test(str);
+  let testo =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return testo.test(str);
 }
 console.log(isThisAnEmail(email));
 console.log(isThisAnEmail(email1));
