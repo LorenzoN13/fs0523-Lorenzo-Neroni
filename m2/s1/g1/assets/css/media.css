@@ -39,6 +39,7 @@
 }
 @media screen and (min-width: 1200px){
     body{
+        padding: 15px 40px 15px 40px;
         line-height: 36px;
         font-size: 22px;
     }
