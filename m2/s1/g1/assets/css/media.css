@@ -1,0 +1,106 @@
+@media screen and (min-width: 576px){
+    header nav ul {
+        display: inline-flex;
+    }
+    header nav li {  
+        padding-left: 15px;  
+    }
+    article {
+        font-size: 19.4px;
+    }
+    article h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    section h2 {
+        background-color: rgba(128, 128, 128, 0.531);
+    }
+    footer {
+        font-size: 20.99px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    main{
+        padding: 25px;
+    }
+    article h1 {
+        font-size: 2.97em;
+        line-height: 1em;
+    }
+    article h2{
+        font-weight: bold;
+    }
+    article table{
+        margin: 4em auto; 
+
+    }
+}
+@media screen and (min-width: 1200px){
+    body{
+        line-height: 36px;
+        font-size: 22px;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        justify-content: space-between;
+    }
+    
+    header div{
+        display: flex;
+        align-items: center;
+    }
+    header div img,p{
+        margin-bottom: 0;
+    }
+    header nav{
+        margin-right: 20px;
+    }
+    
+    article p, h2{
+        margin: 20px;
+        font-size: 23px;
+    }
+    article li{
+        margin-left: 23px;
+        font-size: 22px;
+    }
+    article table{
+        margin: 4em 10em; 
+        width: 70%;
+    }
+     article iframe, section{
+        display: inline-block;
+        width: calc(100% / 2);
+        margin: 0 -0.4rem;
+        height: 212px;
+        vertical-align: middle;
+    }
+    section{
+        border-radius: 13px;
+    }
+    section p{
+        font-size: 20px;
+        margin: 0;
+
+    }
+    aside div{
+        width: calc(100% / 3);
+        margin: 0 -0.4rem;
+        display: inline-block;
+    }
+    footer{
+        font-size: 22px;
+        padding: 20px 13.3em;
+    }
+}
+
+@media print {
+    header,aside,footer,section{
+        display: none;
+    }
+}
