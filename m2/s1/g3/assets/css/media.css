@@ -5,10 +5,10 @@
     }
     .container-shop{
         padding: 10px;
-        height: 320px;
+        height: 200px;
         width: 100%;
         border-radius: 0;
-        
+        display: ;
     }
     .shop{
         background-color: #FFDF7F;
@@ -21,7 +21,7 @@
         cursor: pointer;
         justify-content: center;
         padding: 20px;
-        margin-top: 0;
+        margin-top: 20px;
     }
     .shop h2{
         font-size: 30px;
@@ -54,7 +54,7 @@
 
     .mini-elementi{
         background-color: #FFDF7F;
-        padding: 10px; 
+        padding: 12px; 
         margin-top: 0;
         margin-right: 10px;
         font-size: 14px;
@@ -62,16 +62,6 @@
         text-align: center;
         cursor: pointer;
         font-weight: 700;
-    }
-    .mini-elementi1{
-        background-color: #FFDF7F;
-        padding: 10px; 
-        margin-top: 0;
-        margin-left: 4px;
-        font-size: 14px;
-        border-radius: 33px;
-        text-align: center;
-        cursor: pointer;
-        font-weight: 700;
-    }
+    }    
+       
 }
