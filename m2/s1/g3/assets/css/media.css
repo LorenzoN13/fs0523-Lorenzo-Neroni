@@ -1,0 +1,77 @@
+@media screen and (min-width: 768px) {
+    body{
+        padding: 0;
+        margin-top: 0;
+    }
+    .container-shop{
+        padding: 10px;
+        height: 320px;
+        width: 100%;
+        border-radius: 0;
+        
+    }
+    .shop{
+        background-color: #FFDF7F;
+        width: 200px;
+        margin-left: 270px;
+    }
+    .shop-ape{
+        display: flex;
+        margin: 0;
+        cursor: pointer;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+    .shop h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .ape{
+        padding-right: 15px;
+        width: 50px;
+    }
+    .mini-container{
+        width: 100%;
+    }
+    .mini-4{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mini2{
+        width: 30%;
+        margin: 0;
+        display: flex;
+    }
+
+    .mini3{
+        width: 30%;
+        margin: 0;
+        display: flex;
+    }
+
+    .mini-elementi{
+        background-color: #FFDF7F;
+        padding: 10px; 
+        margin-top: 0;
+        margin-right: 10px;
+        font-size: 14px;
+        border-radius: 33px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .mini-elementi1{
+        background-color: #FFDF7F;
+        padding: 10px; 
+        margin-top: 0;
+        margin-left: 4px;
+        font-size: 14px;
+        border-radius: 33px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}

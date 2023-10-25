@@ -1,12 +1,13 @@
 body{
     font-family: Helvetica, sans-serif;
     color: #732104;
-    line-height: 20px;
+    line-height: 33px;
     height: 100vh;
+    padding: 20px;
 }
 .container{
-    padding: 20px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .container-shop{
@@ -34,7 +35,7 @@ body{
 }
 
 .shop h2{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -64,7 +65,7 @@ body{
     margin-top: 0;
 }
 
-.mini-elementi{
+.mini-elementi, .mini-elementi1{
     background-color: #FFDF7F;
     padding: 10px; 
     margin-top: 22px;
@@ -73,4 +74,88 @@ body{
     border-radius: 33px;
     text-align: center;
     cursor: pointer;
+    font-weight: bold;
+}
+
+main h1{
+    text-align: center;
+    font-size: 48.6px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 20px
+}
+
+.card-honey{
+    background-color: rgba(238, 168, 38, 0.246);
+    margin-top: 0;
+    border-radius: 55px 55px;
+    height: 55vh;
+    margin-bottom: 20px;
+}
+
+.honey{
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 55px 55px 0 0;
+}
+
+.honey-text{
+    padding: 0 20px;
+}
+.honey-text h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.honey-text p{
+    font-size: 20px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.honey-add{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.honey-add p{
+    background-color: #FFDF7F;
+    padding: 5px;
+    border-radius: 55px;
+    width: 250px;
+    margin-left: 100px;
+}
+
+footer h2{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+footer h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container-foo{
+    background-color: rgba(238, 168, 38, 0.246);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.foo-text p{
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.foo-text img {
+    width: 100%;
 }
