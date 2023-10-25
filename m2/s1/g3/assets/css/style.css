@@ -41,17 +41,29 @@ body{
     padding-right: 20px;
     width: 60px;
 }
+
 .mini-container{
- width: 300px;
+ width: 100%;
 }
+
 .mini-4{
-    flex-wrap: wrap;
-    padding: 10px;
     display: flex;
+    align-items: center;
+
 }
+.mini2{
+    margin: 10px;
+    width: 50%;
+}
+
+.mini3{
+    margin: 10px;
+    width: 50%;
+}
+
 .mini-elementi{
     background-color: #FFDF7F;
     padding: 10px; 
-    flex-basis: 50%;
-    
+    margin-top: 22px;
+    font-size: 22px;
 }
