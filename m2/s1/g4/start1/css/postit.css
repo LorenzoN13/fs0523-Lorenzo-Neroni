@@ -1,0 +1,62 @@
+:root{
+    --ColorPost157:#F6F6C4;
+    --ColorPost248:#C3EEC4;
+    --ColorPost36:#BFC0E6;
+}
+
+body{
+   
+    line-height: 20px;
+    background-color: #666666;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 50px;
+}
+p{
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.container-postit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+    position: relative; 
+    padding-top: 100px;
+}
+
+.post{
+    margin: 17px;
+    width: 230px;
+    height: 150px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+.Task1, .Task5, .Task7{
+    background-color: var(--ColorPost157);
+    transform: rotate(-6deg);
+}
+
+.Task2, .Task4, .Task8{
+    background-color: var(--ColorPost248);
+    transform: rotate(6deg);
+}
+
+.Task3, .Task6{
+    background-color: var(--ColorPost36);
+    transform: rotate(-8deg);
+}
+.post:hover{
+    transform: scale(1.4);
+    z-index: 1;
+}
+
