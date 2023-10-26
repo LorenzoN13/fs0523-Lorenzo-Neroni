@@ -39,7 +39,11 @@ p{
     width: 230px;
     height: 150px;
     text-align: center;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 3px 3px 9px black;
+    animation-name: attacamento;
+    transition: transfom 0.7s;
+    animation-duration: 5s;
+  
 }
 .Task1, .Task5, .Task7{
     background-color: var(--ColorPost157);
@@ -59,4 +63,15 @@ p{
     transform: scale(1.4);
     z-index: 1;
 }
+
+@keyframes attacamento {
+    from{
+        transform: translateZ(800px);
+    }
+    to{
+        transform: translateZ(0px);
+    }
+}
+
+
 
