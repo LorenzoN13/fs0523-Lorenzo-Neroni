@@ -5,7 +5,7 @@ let navbar = document.querySelector(".navbar")
 let btn = document.querySelector(".btn");
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY < 400) {
+    if (window.scrollY < 460) {
         navbar.style.backgroundColor = "#ffc017";
         btn.style.backgroundColor = "#000";
     } else {

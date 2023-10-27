@@ -90,31 +90,40 @@ svg{
 }
 
 .container-main{
-    margin: 20px 100px;
-    width: 13%;
+    margin: 20px 90px;
+    width: 14%;
 }
 
 .container-main-articoli{
     display: flex;
-    padding: 0  100px;
-    gap: 50px;
+    padding: 0  10px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+main{
+border-bottom:1px solid rgba(0, 0, 0, 0.138);
+font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .trending{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.trending h4{
+    font-weight: bold;
 }
 
 .articoli-main{
+    width: 33%;
     display: flex;
-
+    margin-bottom: 30px;
 }
 
 .articoli-main .number{
     font-size: 32px;
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #F2F2F2;
     padding-right: 10px;
 }
@@ -124,13 +133,11 @@ svg{
 
 .profilo p{
     font-weight: bold;
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .profilo span{
     font-size: 12px;
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .profilo .utente{
@@ -144,7 +151,6 @@ svg{
 }
 .utente h5 a{
     text-decoration: none;
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     color: black;
     font-weight: bold;
@@ -152,9 +158,143 @@ svg{
 
 .articoli{
     display: flex;
+}
+
+.articoli-section{
+    margin: 50px 90px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.profilo-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profilo-section img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.articoli-section p{
+    font-size: 14px;
+}
+
+.articoli-section h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profilo-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.date-list{
+    font-size: 13px;
+}
+
+.date-list ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.date-list li a{
+    text-decoration: none;
+    color: black;
 
 }
 
+.date-list li:nth-of-type(3){
+    background-color: #f2f2f2;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+.articoli-section .art-img{
+    width: 200px;
+    margin-left: 40px;
+}
+
+.articoli-section{
+    display: flex;
+}
+
+.boolmark{
+    margin-top: 100px;
+    opacity: 0.8;
+}
+
+.boolmark:hover{
+    opacity: 1;
+}
+
+aside{
+    position: relative;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.container-aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 10vh;
+
+}
+
+.container-aside h3{
+    font-weight: bold;
+}
+
+.container-aside a{
+    color: green;
+    text-decoration: none;
+}
+
+.contaier-link{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contaier-link a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #f2f2f2;
+    line-height: 50px;
+    border-radius: 50px;
+}
+footer{
+    position: relative;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container-foo-list{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 45%;
+    height: 10vh;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.059);
+    
+}
+
+.container-foo-list ul{
+    display: flex;
+}
+
+.container-foo-list li{
+    list-style: none;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.container-foo-list a{
+    text-decoration: none;
+    color: black;
+}
 
 
 /*********************
