@@ -34,7 +34,7 @@ nav{
 .logo-list p{
     padding: 10px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .logo-list a{
@@ -202,7 +202,13 @@ font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 .date-list li a{
     text-decoration: none;
     color: black;
+}
 
+.date-list  img{
+    margin-top: 9px;
+    margin-left: 3px;
+    text-align: center;
+    width: 17px;
 }
 
 .date-list li:nth-of-type(3){
