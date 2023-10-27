@@ -222,6 +222,8 @@ font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .articoli-section{
     display: flex;
+    height: 150px;
+    width: 45%;
 }
 
 .boolmark{
@@ -240,11 +242,10 @@ aside{
 }
 .container-aside{
     position: absolute;
-    top: 0;
+    top: -55.7em;
     right: 0;
     width: 45%;
     height: 10vh;
-
 }
 
 .container-aside h3{
@@ -276,7 +277,7 @@ footer{
 
 .container-foo-list{
     position: absolute;
-    top: 200px;
+    top: -45em;
     right: 0;
     width: 45%;
     height: 10vh;
