@@ -82,11 +82,6 @@ h1{
     background-color: black;
 }
 
-svg{
-    opacity: 1;
-    animation: random 2s infinite;
-}
-
 .container-main{
     margin: 20px 90px;
     width: 14%;
@@ -282,8 +277,7 @@ footer{
     width: 45%;
     height: 10vh;
     padding-top: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.059);
-    
+    border-top: 1px solid rgba(0, 0, 0, 0.059);  
 }
 
 .container-foo-list ul{
@@ -301,13 +295,3 @@ footer{
     color: black;
 }
 
-
-/*********************
-*   KEYFRAMES
-*********/
-@keyframes random {
-0%{opacity: 1;}   
-50%{opacity: 0;}   
-100%{opacity: 1;} 
-    
-}
