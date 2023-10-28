@@ -113,6 +113,7 @@ font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 33%;
     display: flex;
     margin-bottom: 30px;
+   
 }
 
 .articoli-main .number{
@@ -127,6 +128,7 @@ font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 .profilo p{
     font-weight: bold;
     font-size: 15px;
+    width: 300px;
 }
 
 .profilo span{
@@ -142,11 +144,15 @@ font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     border-radius: 100%;
     margin-right: 10px; 
 }
+
+
 .utente h5 a{
+    width: 400px;
     text-decoration: none;
     font-size: 13px;
     color: black;
     font-weight: bold;
+   
 }
 
 .articoli{
