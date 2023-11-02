@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'colori';
+@import 'animazioni';
+@import 'bottoni';
+@import 'font';
+@import 'mixins';
+@import 'spaziature';
+
+body{
+    background-color: $bg-colore;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    align-items: center;
+    .logo{
+        width: 8%;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        li{
+            margin-left: 30px;
+            a{
+                display: block;
+                text-decoration: none;
+                color: $coloretesto;
+            }
+        }
+    }
+    
+}
