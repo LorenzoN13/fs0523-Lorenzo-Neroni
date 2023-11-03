@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Netflix</title>
 </head>
+
 <body class="bg-dark container-fluid ps-4 pe-4">
     <header>
         <nav class="navbar navbar-expand-md d-flex p-0 align-items-center">
             <div class="container-fluid p-0">
-                <a class="navbar-brand" href="#"><img style="width: 120px;" src="./imgs/netflix_logo.png" alt="Logo di Netflix"></a>
+                <a class="navbar-brand" href="#"><img style="width: 120px;" src="./imgs/netflix_logo.png"
+                        alt="Logo di Netflix"></a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
@@ -25,7 +28,9 @@
                     <a href="#"><i class="bi bi-search text-white  me-3"></i></a>
                     <a class=" me-3 text-white text-decoration-none" href="#">KIDS</a>
                     <a href="#"><i class="bi bi-bell-fill  me-4 text-white"></i></a>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img style="width: 30px;" src="./imgs/avatar.png" alt="avatar dell'utente"></a>
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img style="width: 30px;" src="./imgs/avatar.png"
+                            alt="avatar dell'utente"></a>
                 </div>
             </div>
         </nav>
@@ -34,27 +39,86 @@
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex">
                 <h1 class="text-white fs-2">TV Shows</h1>
-                <button style="width: 85px; height: 30px;" class="btn border  border-light rounded-0 p-0 mt-0 ms-4 text-light">Genres <i style="font-size: 10px;" class="bi bi-caret-down-fill ms-2"></i></button>
+                <button style="width: 85px; height: 30px;"
+                    class="btn border  border-light rounded-0 p-0 mt-0 ms-4 text-light">Genres <i
+                        style="font-size: 10px;" class="bi bi-caret-down-fill ms-2"></i></button>
             </div>
             <div style="font-size: 0;">
                 <button class="btn border lh-1 border-light rounded-0 text-light"><i class="bi bi-list"></i></button>
-                <button class="btn border lh-1 border-light rounded-0 text-light"><i class="bi bi-arrows-fullscreen"></i></button>
+                <button class="btn border lh-1 border-light rounded-0 text-light"><i
+                        class="bi bi-arrows-fullscreen"></i></button>
             </div>
         </div>
 
-        <section></section>
+        <section>
+            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner ">
 
+                    <div class="carousel-item active">
+                        <div class="col-3">
+                          <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                        </div>
+                        <div class="col-3">
+                          <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                        </div>
+                        <div class="col-3">
+                          <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                          <div class="col-3">
+                            <img src="./imgs/media/media0.webp" class="d-block w-100%" alt="..." />
+                          </div>
+                        </div>
+                      
 
-
-
-
-
-
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </main>
 
 
 
-    
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

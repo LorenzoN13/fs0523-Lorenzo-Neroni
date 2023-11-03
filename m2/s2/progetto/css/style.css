@@ -6007,7 +6007,10 @@ textarea.form-control-lg {
   }
 }
 
-.carousel-item.active,
+.carousel-item.active{
+  display: flex;
+}
+
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
