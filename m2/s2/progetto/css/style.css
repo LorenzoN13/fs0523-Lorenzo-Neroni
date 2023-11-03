@@ -6003,17 +6003,14 @@ textarea.form-control-lg {
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
-    transition: none;
+    transition: transform 0.6s ease-in-out ;
   }
 }
 
-.carousel-item.active{
-  display: flex;
-}
-
+.carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
-  display: block;
+  display: flex;
 }
 
 .carousel-item-next:not(.carousel-item-start),
