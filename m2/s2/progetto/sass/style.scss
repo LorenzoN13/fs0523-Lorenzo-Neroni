@@ -9,3 +9,8 @@
 .carousel-item-prev {
   display: flex;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: 3s  ease-in;
+}
