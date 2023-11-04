@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'style.css';
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11975,4 +11976,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
