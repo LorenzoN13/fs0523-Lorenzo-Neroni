@@ -6069,7 +6069,7 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
   .carousel-control-next {
-    transition: none;
+    transition: 2s  ease-in;
   }
 }
 .carousel-control-prev:hover, .carousel-control-prev:focus,
