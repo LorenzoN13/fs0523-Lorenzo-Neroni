@@ -36,7 +36,7 @@ class Pet{
     }
 
     personaProprietario() {
-        return `${this.name} (${this.species} ${this.breed}) - Padrone: ${this.owner}`;
+        return `${this.name} (${this.specie} ${this.owner}) - Padrone: ${this.breed}`;
     }
 }
 
@@ -45,10 +45,10 @@ const listaPet = [];
 function creazionePet(){
     let name = document.getElementById('name').value;
     let specie = document.getElementById('specie').value;
-    let breed = document.getElementById('breed').value;
     let owner = document.getElementById('owner').value;
+    let breed = document.getElementById('breed').value;
 
-    let pet = new Pet(name, specie, breed, owner);
+    let pet = new Pet(name, specie, owner, breed);
     listaPet.push(pet);
 
     aggiornamentoList();
@@ -69,6 +69,6 @@ function aggiornamentoList() {
 function svuotareForm() {
     document.getElementById('name').value = '';
     document.getElementById('specie').value = '';
-    document.getElementById('breed').value = '';
     document.getElementById('owner').value = '';
+    document.getElementById('breed').value = '';
 }

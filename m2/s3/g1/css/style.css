@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Space+Grotesk&display=swap');
+h1{
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: 'Agbalumo', sans-serif;
+    margin-left: 50px;
+}
+form{
+    align-items: center;
+}
+
+label{
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+}
+
+input{
+    font-size: 20px;
+}
+
+button{
+    font-size: 25px;
+    padding: 10px 28px;
+    margin-top: 50px;
+    margin-left: 45%;
+}
+
+li{
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+    padding: 5px 10px;
+    width: 40%;
+    font-size: 18px;
+}
