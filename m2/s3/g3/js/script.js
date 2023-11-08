@@ -33,10 +33,21 @@ fetch('https://striveschool-api.herokuapp.com/books')
         let buttonCompraOra = document.createElement('button');
         buttonCompraOra.innerHTML = "Compra Ora";
         buttonCompraOra.style.marginRight = "10px";
-    
+        buttonCompraOra.style.padding = "6px 8px";
+        buttonCompraOra.style.border = "none";
+        buttonCompraOra.style.borderRadius = "7px";
+        buttonCompraOra.style.color = "white";
+        buttonCompraOra.classList.add('bg-primary');
+        
+        
         
         let buttonRimuovi = document.createElement('button');
         buttonRimuovi.innerHTML = "Rimuovi";
+        buttonRimuovi.style.padding = "6px 8px";
+        buttonRimuovi.style.borderRadius = "7px";
+        buttonRimuovi.style.border = "none";
+        buttonRimuovi.classList.add('bg-danger');
+        buttonRimuovi.style.color = "white";
         
         cardCorpo.appendChild(title);
         cardCorpo.appendChild(prezzo);
