@@ -39,10 +39,8 @@ fetch('https://striveschool-api.herokuapp.com/books')
         buttonCompraOra.style.color = "white";
         buttonCompraOra.classList.add('bg-primary');
         
-        
-        
         let buttonRimuovi = document.createElement('button');
-        buttonRimuovi.innerHTML = "Rimuovi";
+        buttonRimuovi.innerHTML = "Scarta";
         buttonRimuovi.style.padding = "6px 8px";
         buttonRimuovi.style.borderRadius = "7px";
         buttonRimuovi.style.border = "none";
