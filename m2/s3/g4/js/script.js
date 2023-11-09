@@ -9,7 +9,7 @@ document.getElementById('loadButton').addEventListener('click', function() {
       'Content-Type': 'application/json' 
     }
   })
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
      
       const card = document.getElementById('imageCard');
