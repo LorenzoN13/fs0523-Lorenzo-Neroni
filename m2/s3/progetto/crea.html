@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <title>Crea</title>
+</head>
+<body>
+    <header class="p-0">
+        <nav class="navbar p-0 bg-black">
+            <div class="container-fluid me-3 ms-3">
+                <a class="navbar-brand m-0" href="index.html"><img class="w-50" src="./img/logo.png" alt="logo"></a>
+                 <a href="#"><button class="btn "><i class="bi bi-pencil text-white fs-6"></i></button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="d-flex justify-content-center mb-4 border-bottom">
+                <h2 class="mt-3 mb-4">Creazione delle Card per L'Album</h2>
+            </div>
+            
+            <form>
+                
+                <label class="fw-bold" for="text">Titolo:</label>
+                <input type="text" class="form-control mb-2" placeholder="inserisci il titolo della Card" id="text" value="">
+
+                <label class="fw-bold" for="prezzo">Prezzo:</label>
+                <input type="number" id="prezzo" placeholder="Inserisci il Prezzo" class="form-control mb-2">
+                
+                <div>
+                    <label class="fw-bold" for="text-area">Scrivi il Contenuto della Card:</label>
+                    <textarea class="form-control mb-2" placeholder="Scrivi la Descrizione della Card" id="text-area" style="height: 100px"></textarea>
+                </div>
+                <label class="fw-bold" for="checkbox">Certificati:</label>
+                <input class="form-check-input rounded-0 border-2 fs-4 mt-0 mb-4" id="checkbox" type="checkbox" value="">
+                <div>
+                    <button class="btn fs-4 rounded-0 btn-dark crea">Creazione Card</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/crea.js"></script>
+</body>
+</html>
