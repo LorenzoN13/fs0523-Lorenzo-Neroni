@@ -6,20 +6,19 @@ let creaCard = document.querySelector('.crea');
 creaCard.addEventListener('click',function(){
     
     let name = document.querySelector('#text').value;
-    let price = Number(document.querySelector('#prezzo').value);
     let description= document.querySelector('#text-area').value;
     let brand = document.querySelector('#brand').value;
-    let image = document.querySelector('#image').value;
-    let checkBox = document.querySelector('#checkbox').value;
+    let imageUrl = document.querySelector('#image').value;
+    let price = Number(document.querySelector('#prezzo').value);
+   
     
     
     let newCard = {
         name,
-        brand,
-        image,
         description,
+        brand,
+        imageUrl,
         price,
-        checkBox
     }
 
     fetch(Url,{
