@@ -5,7 +5,7 @@ function game(giocatore1:number, giocatore2:number): void{
     giocatore2 = Math.floor(Math.random() * 100) + 1;
     console.log(giocatore2);
     
-    const numberCasual = Math.floor(Math.random() * (100 - 1) + 1);
+    const numberCasual:number = Math.floor(Math.random() * (100 - 1) + 1);
 
     console.log(`Il numero generato è: ${numberCasual}`);
 
