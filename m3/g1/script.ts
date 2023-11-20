@@ -1,4 +1,4 @@
-function game(giocatore1:number, giocatore2:number) {
+function game(giocatore1:number, giocatore2:number): void{
 
     giocatore1 = Math.floor(Math.random() * 100) + 1;
     console.log(giocatore1);
