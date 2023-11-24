@@ -10,6 +10,7 @@ interface SmartphoneInterface{
 }
 
 class Smartphone implements SmartphoneInterface{
+
     constructor(
         public carica:number,
         public numeroChiamate:number,
@@ -17,6 +18,16 @@ class Smartphone implements SmartphoneInterface{
     ){
         this.carica = 0;
         this.numeroChiamate = 0;
-        this.numeroChiamate = 0.3;
+        this.costoMinuto = 0.3;
     }
-}
+    
+    ricarica(euro: number): void {
+        this.carica += euro;
+        console.log(`Il credito residuo è: ${this.carica} euro. Il credito caricato è di: ${euro}.`);
+    }
+
+    numero404(): string{
+       return `Il credito residuo è: ${this.carica} euro.`;
+    }
+
+}   
