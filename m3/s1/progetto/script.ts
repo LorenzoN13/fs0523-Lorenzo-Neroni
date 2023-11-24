@@ -21,39 +21,41 @@ class Smartphone implements SmartphoneInterface{
         this.costoMinuto = 0.3;
     }
     
-    ricarica(euro: number): void {
+    public ricarica(euro: number): void {
         this.carica += euro;
-        console.log(`Il credito residuo è: ${this.carica} euro. Il credito caricato è di: ${euro}.`);
     }
 
-    numero404(): string{
+    public numero404(): string{
        return `Il credito residuo è: ${this.carica} euro.`;
     }
 
-    getNumeroChiamate(): number {
+    public getNumeroChiamate(): number {
         return this.numeroChiamate;
     }
 
-    chiamata(min: number): void {
+    public chiamata(min: number): void {
         const costoChiamata:number = min * this.costoMinuto;
 
         if (this.carica >= costoChiamata){
             this.carica -= costoChiamata;
             this.numeroChiamate++;
-            console.log(`Tempo in lineaa è di: ${min} minuti. Credito residuo è di: ${this.carica} euro.`);
-        } else {
-            console.log(`Credito insufficente per svolgere la chiamata.`);
         }
     }
 
-    azzeraChiamate(): void {
+    public azzeraChiamate(): void {
         this.numeroChiamate = 0;
-        console.log(`Chiamate azzerate.`);
     }
 }
 
 const smartphone = new Smartphone(0, 0, 0.3);
 smartphone.ricarica(10);
-smartphone.chiamata(5);
-smartphone.numero404();
+console.log(`Il credito residuo è di: ${smartphone.carica} euro.`);
+
+const minuti = 5;
+smartphone.chiamata(minuti)
+console.log(`Chiamata: Tempo in linea è di: ${minuti} minuti.`);
+
+console.log(smartphone.numero404());
+
 smartphone.azzeraChiamate();
+console.log(`Chiamate azzerate con successo.`);

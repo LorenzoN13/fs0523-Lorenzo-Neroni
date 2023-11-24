@@ -10,7 +10,6 @@ class Smartphone {
     }
     ricarica(euro) {
         this.carica += euro;
-        console.log(`Il credito residuo è: ${this.carica} euro. Il credito caricato è di: ${euro}.`);
     }
     numero404() {
         return `Il credito residuo è: ${this.carica} euro.`;
@@ -23,20 +22,19 @@ class Smartphone {
         if (this.carica >= costoChiamata) {
             this.carica -= costoChiamata;
             this.numeroChiamate++;
-            console.log(`Tempo in lineaa è di: ${min} minuti. Credito residuo è di: ${this.carica} euro.`);
-        }
-        else {
-            console.log(`Credito insufficente per svolgere la chiamata.`);
         }
     }
     azzeraChiamate() {
         this.numeroChiamate = 0;
-        console.log(`Chiamate azzerate.`);
     }
 }
 const smartphone = new Smartphone(0, 0, 0.3);
 smartphone.ricarica(10);
-smartphone.chiamata(5);
-smartphone.numero404();
+console.log(`Il credito residuo è di: ${smartphone.carica} euro.`);
+const minuti = 5;
+smartphone.chiamata(minuti);
+console.log(`Chiamata: Tempo in linea è di: ${minuti} minuti.`);
+console.log(smartphone.numero404());
 smartphone.azzeraChiamate();
+console.log(`Chiamate azzerate con successo.`);
 //# sourceMappingURL=script.js.map
