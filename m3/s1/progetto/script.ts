@@ -3,5 +3,8 @@ interface SmartphoneInterface{
     numeroChiamate:number;
     costoMinuto:number;
     ricarica(euro:number):void;
-    numero
+    numero404():string;
+    getNumeroChiamate():number;
+    chiamata(min:number):void;
+    azzeraChiamate():void;
 }
