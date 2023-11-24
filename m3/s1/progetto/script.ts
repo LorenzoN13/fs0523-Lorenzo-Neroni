@@ -34,4 +34,16 @@ class Smartphone implements SmartphoneInterface{
         return this.numeroChiamate;
     }
 
-}   
+    chiamata(min: number): void {
+        const costoChiamata:number = min * this.costoMinuto;
+
+        if (this.carica >= costoChiamata){
+            this.carica -= costoChiamata;
+            this.numeroChiamate++;
+            console.log(`Tempo in lineaa è di: ${min} minuti. Credito residuo è di: ${this.carica} euro.`);
+        } else {
+            console.log(`Credito insufficente per svolgere la chiamata.`);
+        }
+    }
+
+}

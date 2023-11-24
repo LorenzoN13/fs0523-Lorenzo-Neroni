@@ -18,5 +18,16 @@ class Smartphone {
     getNumeroChiamate() {
         return this.numeroChiamate;
     }
+    chiamata(min) {
+        const costoChiamata = min * this.costoMinuto;
+        if (this.carica >= costoChiamata) {
+            this.carica -= costoChiamata;
+            this.numeroChiamate++;
+            console.log(`Tempo in lineaa è di: ${min} minuti. Credito residuo è di: ${this.carica} euro.`);
+        }
+        else {
+            console.log(`Credito insufficente per svolgere la chiamata.`);
+        }
+    }
 }
 //# sourceMappingURL=script.js.map
