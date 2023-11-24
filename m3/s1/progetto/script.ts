@@ -30,4 +30,8 @@ class Smartphone implements SmartphoneInterface{
        return `Il credito residuo è: ${this.carica} euro.`;
     }
 
+    getNumeroChiamate(): number {
+        return this.numeroChiamate;
+    }
+
 }   

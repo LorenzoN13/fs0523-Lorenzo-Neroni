@@ -15,5 +15,8 @@ class Smartphone {
     numero404() {
         return `Il credito residuo è: ${this.carica} euro.`;
     }
+    getNumeroChiamate() {
+        return this.numeroChiamate;
+    }
 }
 //# sourceMappingURL=script.js.map
