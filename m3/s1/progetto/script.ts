@@ -8,3 +8,7 @@ interface SmartphoneInterface{
     chiamata(min:number):void;
     azzeraChiamate():void;
 }
+
+class Smartphone implements SmartphoneInterface{
+    
+}
