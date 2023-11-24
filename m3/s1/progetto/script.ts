@@ -46,4 +46,9 @@ class Smartphone implements SmartphoneInterface{
         }
     }
 
+    azzeraChiamate(): void {
+        this.numeroChiamate = 0;
+        console.log(`Chiamate azzerate.`);
+    }
 }
+

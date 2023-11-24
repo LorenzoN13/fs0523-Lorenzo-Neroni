@@ -29,5 +29,9 @@ class Smartphone {
             console.log(`Credito insufficente per svolgere la chiamata.`);
         }
     }
+    azzeraChiamate() {
+        this.numeroChiamate = 0;
+        console.log(`Chiamate azzerate.`);
+    }
 }
 //# sourceMappingURL=script.js.map
