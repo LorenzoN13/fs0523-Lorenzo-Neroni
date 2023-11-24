@@ -34,4 +34,9 @@ class Smartphone {
         console.log(`Chiamate azzerate.`);
     }
 }
+const smartphone = new Smartphone(0, 0, 0.3);
+smartphone.ricarica(10);
+smartphone.chiamata(5);
+smartphone.numero404();
+smartphone.azzeraChiamate();
 //# sourceMappingURL=script.js.map
