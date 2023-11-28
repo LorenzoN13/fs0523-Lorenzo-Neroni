@@ -5,12 +5,14 @@ import { Page2Component } from './pages/page2/page2.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:Page1Component
+    path:'page1',
+    component:Page1Component,
+    title:'Page1'
   },
   {
     path:'page2',
-    component: Page2Component
+    component: Page2Component,
+    title:'Page2'
   }
 ];
 
