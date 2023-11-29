@@ -13,7 +13,7 @@ export class Page1Component implements OnInit{
   constructor(private cardSvc: CardService) {}
 
     ngOnInit(): void {
-      this.card = this.cardSvc.cards;
+      this.card = this.cardSvc.getActivePost();
 
 }
 

@@ -38,4 +38,13 @@ export class CardService {
       "boolean":true
     }
   ];
+
+  ngOnInit(){}
+
+  getActivePost(){
+    return this.cards.filter(card => card.boolean === true);
+  }
+  getInactivePost(){
+    return this.cards.filter(card => card.boolean === false);
+  }
 }
