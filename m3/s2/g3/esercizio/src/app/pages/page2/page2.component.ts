@@ -13,7 +13,6 @@ export class Page2Component implements OnInit {
   constructor(private cardSvc: CardService) {}
 
     ngOnInit(): void {
-      this.card = this.cardSvc.getInactivePost();
-
-  }
+      this.card = this.cardSvc.getInattivoPost();
+    }
 }

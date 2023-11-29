@@ -12,9 +12,7 @@ export class Page1Component implements OnInit{
   card:ICard[] = [];
   constructor(private cardSvc: CardService) {}
 
-    ngOnInit(): void {
-      this.card = this.cardSvc.getActivePost();
-
-}
-
+  ngOnInit(): void {
+    this.card = this.cardSvc.getAttivoPost();
+  }
 }
