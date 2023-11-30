@@ -9,9 +9,9 @@ import { CardService } from '../../card.service';
 })
 export class Page1Component {
   card:ICard[] = [];
-  constructor(private cardSvc:CardService){}
+  constructor(private cardSvc: CardService) {}
 
   ngOnInit(): void {
-    this.card = this.cardSvc.cards
+    this.card = this.cardSvc.getAttivoPost();
   }
 }
