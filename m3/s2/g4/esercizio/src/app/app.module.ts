@@ -8,6 +8,7 @@ import { Page1Component } from './pages/page1/page1.component';
 import { Page2Component } from './pages/page2/page2.component';
 import { TestoGrandePipe } from './testo-grande.pipe';
 import { ColoraTestoDirective } from './colora-testo.directive';
+import { PageviewComponent } from './pages/pageview/pageview.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ColoraTestoDirective } from './colora-testo.directive';
     Page1Component,
     Page2Component,
     TestoGrandePipe,
-    ColoraTestoDirective
+    ColoraTestoDirective,
+    PageviewComponent
   ],
   imports: [
     BrowserModule,

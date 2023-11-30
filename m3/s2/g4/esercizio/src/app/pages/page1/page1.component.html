@@ -8,6 +8,7 @@
       <p>{{card.boolean}}</p>
       <button class="btn btn-light" (click)="card.boolean = !card.boolean"
       [innerHTML]="card.boolean ? 'Abilita' : 'Disabilita'">Abilita/Disabilita</button>
+      <button class="btn btn-success ms-3" [routerLink]="['/pageview',card.id]">Dettagli</button>
     </div>
   </div>
   </div>

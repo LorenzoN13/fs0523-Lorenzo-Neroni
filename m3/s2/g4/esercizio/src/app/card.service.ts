@@ -8,6 +8,7 @@ export class CardService {
 
   cards:ICard[] = [
     {
+      "id":1,
       "header":"Post",
       "title":"Dolor velit sint tempor culpa cupidat ipsum do ad tempor eiusmod.",
       "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem maiores necessitatibus eveniet dicta veritatis excepturi nihil, officiis dolor sint sit qui odit quae inventore blanditiis voluptatibus doloribus facilis aliquam.",
@@ -15,6 +16,7 @@ export class CardService {
       "boolean":false
     },
     {
+      "id":2,
       "header":"Post",
       "title":"Dolor velit sint tempor culpa cupidat ipsum do ad tempor eiusmod.",
       "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem maiores necessitatibus eveniet dicta veritatis excepturi nihil, officiis dolor sint sit qui odit quae inventore blanditiis voluptatibus doloribus facilis aliquam.",
@@ -22,6 +24,7 @@ export class CardService {
       "boolean":true
     },
     {
+      "id":3,
       "header":"Post",
       "title":"Dolor velit sint tempor culpa cupidat ipsum do ad tempor eiusmod.",
       "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem maiores necessitatibus eveniet dicta veritatis excepturi nihil, officiis dolor sint sit qui odit quae inventore blanditiis voluptatibus doloribus facilis aliquam.",
@@ -29,6 +32,7 @@ export class CardService {
       "boolean":false
     },
     {
+      "id":4,
       "header":"Post",
       "title":"Dolor velit sint tempor culpa cupidat ipsum do ad tempor eiusmod.",
       "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem maiores necessitatibus eveniet dicta veritatis excepturi nihil, officiis dolor sint sit qui odit quae inventore blanditiis voluptatibus doloribus facilis aliquam.",
@@ -36,6 +40,7 @@ export class CardService {
       "boolean":false
     },
     {
+      "id":5,
       "header":"Post",
       "title":"Dolor velit sint tempor culpa cupidat ipsum do ad tempor eiusmod.",
       "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem maiores necessitatibus eveniet dicta veritatis excepturi nihil, officiis dolor sint sit qui odit quae inventore blanditiis voluptatibus doloribus facilis aliquam.",
