@@ -56,4 +56,9 @@ export class CardService {
   getInattivoPost(){
     return this.cards.filter(card => card.boolean === false);
   }
+
+  getPrendiId(id:number){
+    return this.cards.filter(card => card.id == id);
+  }
+
 }

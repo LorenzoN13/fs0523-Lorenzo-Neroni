@@ -6,9 +6,6 @@
       <p class="card-text">{{card.text | testoGrande}}</p>
       <h5>{{card.author}}</h5>
       <p>{{card.boolean}}</p>
-      <button class="btn btn-light" (click)="card.boolean = !card.boolean"
-      [innerHTML]="card.boolean ? 'Abilita' : 'Disabilita'">Abilita/Disabilita</button>
-      <button class="btn btn-success ms-3" routerLink="/pageview">Dettagli</button>
     </div>
   </div>
 </div>
