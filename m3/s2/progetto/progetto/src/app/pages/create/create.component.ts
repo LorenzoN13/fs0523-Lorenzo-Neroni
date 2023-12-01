@@ -16,7 +16,7 @@ export class CreateComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-    this.todosSvc.getInattivoPost()
+    
   }
 
   delete(id:string | undefined){

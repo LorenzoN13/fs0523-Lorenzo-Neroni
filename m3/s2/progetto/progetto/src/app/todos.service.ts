@@ -51,11 +51,6 @@ export class TodosService {
     return fetch(this.Url + "/" + id)
    .then(res => res.json());
   }
-  async getAttivoPost(){
-    return (await this.getAll()).filter(e => e.completed === true);
-  }
-  async getInattivoPost(){
-    return (await this.getAll()).filter(e => e.completed === false);
-  }
+
 
 }

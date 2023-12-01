@@ -1,5 +1,12 @@
 {
   "lista": [
-   
+    {
+      "title": "ciao come stai",
+      "id": 1
+    },
+    {
+      "title": "margherita",
+      "id": 2
+    }
   ]
 }

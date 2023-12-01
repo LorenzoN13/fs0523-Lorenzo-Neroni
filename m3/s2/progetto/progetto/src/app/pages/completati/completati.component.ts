@@ -15,7 +15,7 @@ export class CompletatiComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-    this.todosSvc.getAttivoPost()
+    
   }
 
   delete(id:string | undefined){

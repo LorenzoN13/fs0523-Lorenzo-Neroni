@@ -1,5 +1,10 @@
+<div *ngIf="!lista.length" class="alert alert-danger mt-2">
+  Opps,non ci sono task...
+</div>
+
+
 <div *ngIf="lista.length" class="d-flex">
-  <div *ngFor="let li of lista" class="card mt-5 me-3 w-25">
+  <div *ngFor="let li of lista" class="card mt-3 me-3 w-25">
     <h5 class="card-header">Utente con l'id {{li.id}}</h5>
     <div class="card-body">
       <h5 class="card-title">{{li.title}}</h5>
@@ -11,7 +16,4 @@
 </div>
 
 
-<div *ngIf="!lista.length" class="alert alert-danger mt-2 w-25">
-  Opps,non ci sono task...
-</div>
 
