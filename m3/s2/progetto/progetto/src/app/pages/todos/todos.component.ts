@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from '../../Modules/Todo';
 
 @Component({
   selector: 'app-todos',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './todos.component.scss'
 })
 export class TodosComponent {
-
+  newElementi:Partial<Todo> = {}
 }

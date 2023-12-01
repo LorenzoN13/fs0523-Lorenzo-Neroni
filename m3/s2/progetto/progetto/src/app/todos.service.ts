@@ -6,4 +6,14 @@ import { Injectable } from '@angular/core';
 export class TodosService {
 
   constructor() { }
+
+  Url:string = "http://localhost:3000/lista";
+
+  creazione(){
+
+  }
+
+  getAll(){
+    fetch()
+  }
 }
