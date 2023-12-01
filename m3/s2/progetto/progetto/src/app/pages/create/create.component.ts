@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { TodosService } from '../../todos.service';
 import { Todo } from '../../Modules/Todo';
 
@@ -16,7 +15,6 @@ export class CreateComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-
   }
 
   delete(id:string | undefined){

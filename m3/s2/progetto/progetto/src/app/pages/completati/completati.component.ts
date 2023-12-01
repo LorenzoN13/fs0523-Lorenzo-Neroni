@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TodosService } from '../../todos.service';
 import { Todo } from '../../Modules/Todo';
-import { CTodo } from '../../Modules/c-todo';
 
 @Component({
   selector: 'app-completati',
@@ -15,7 +14,6 @@ export class CompletatiComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-    
   }
 
   delete(id:string | undefined){
