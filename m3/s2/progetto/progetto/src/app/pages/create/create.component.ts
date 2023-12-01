@@ -16,7 +16,7 @@ export class CreateComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-    
+
   }
 
   delete(id:string | undefined){
@@ -27,6 +27,4 @@ export class CreateComponent {
       alert(`L'elemento con l'id ${id} eliminato con successo`)
     })
   }
-
-
 }
