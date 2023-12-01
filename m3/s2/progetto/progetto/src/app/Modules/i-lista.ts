@@ -1,4 +1,4 @@
-export interface ILista {
+export interface Todo {
   id: number;
   title: string;
   completed: boolean;
