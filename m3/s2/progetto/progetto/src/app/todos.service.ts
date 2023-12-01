@@ -14,6 +14,7 @@ export class TodosService {
   }
 
   getAll(){
-    fetch()
+    return fetch(this.Url)
+    .then(res => res.json())
   }
 }
