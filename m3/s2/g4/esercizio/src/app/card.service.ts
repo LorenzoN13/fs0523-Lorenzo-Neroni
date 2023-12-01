@@ -53,6 +53,7 @@ export class CardService {
   getAttivoPost(){
     return this.cards.filter(card => card.boolean === true);
   }
+
   getInattivoPost(){
     return this.cards.filter(card => card.boolean === false);
   }

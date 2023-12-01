@@ -1,15 +1,17 @@
-<div *ngIf="!lista.length" class="alert">
-  Opps,non ci sono task
+<div *ngIf="lista.length" class="d-flex">
+  <div *ngFor="let li of lista" class="card mt-5 me-3 w-25">
+    <h5 class="card-header">Utente con l'id {{li.id}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{li.title}}</h5>
+      <button class="btn btn-info" (click)="li.completed = !li.completed"
+      [innerHTML]="li.completed ? 'Da Fare!' : 'Completati'">Da Fare!/Completati</button>
+      <button class=" btn btn-danger" (click)="delete(li.id)">Elimina</button>
+    </div>
+  </div>
 </div>
 
 
-<div *ngIf="lista.length">
-  <ul *ngFor="let li of lista">
-    <li>{{li.id}}</li>
-    <li>{{li.title}}</li>
-    <li>{{li.completed}}</li>
-</ul>
+<div *ngIf="!lista.length" class="alert alert-danger mt-2 w-25">
+  Opps,non ci sono task...
 </div>
-
-
 

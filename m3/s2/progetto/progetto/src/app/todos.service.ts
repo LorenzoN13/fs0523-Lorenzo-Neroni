@@ -20,7 +20,7 @@ export class TodosService {
     })
     .then(res => res.json());
   }
-  
+
   update(elemento:CTodo):Promise<CTodo>{
     return fetch(this.Url + "/" + elemento.id,{
       method:'PUT',
@@ -51,4 +51,11 @@ export class TodosService {
     return fetch(this.Url + "/" + id)
    .then(res => res.json());
   }
+  async getAttivoPost(){
+    return (await this.getAll()).filter(e => e.completed === true);
+  }
+  async getInattivoPost(){
+    return (await this.getAll()).filter(e => e.completed === false);
+  }
+
 }
