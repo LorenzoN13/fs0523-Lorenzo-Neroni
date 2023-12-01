@@ -52,5 +52,4 @@ export class TodosService {
    .then(res => res.json());
   }
 
-
 }

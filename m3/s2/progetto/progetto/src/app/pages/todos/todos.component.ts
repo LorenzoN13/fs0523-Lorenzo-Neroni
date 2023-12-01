@@ -21,6 +21,6 @@ export class TodosComponent {
     this.caricamento = true;
     this.todosSvc.create(this.newElementi).then( res => {
     this.caricamento = false;
-  })
-}
+    })
+  }
 }

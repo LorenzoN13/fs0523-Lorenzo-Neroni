@@ -15,7 +15,9 @@ export class CreateComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
+    
   }
+
 
   delete(id:string | undefined){
     if(!id) return
