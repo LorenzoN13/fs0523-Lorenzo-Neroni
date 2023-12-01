@@ -1,1 +1,15 @@
-<p>create works!</p>
+<div *ngIf="!lista.length" class="alert">
+  Opps,non ci sono task
+</div>
+
+
+<div *ngIf="lista.length">
+  <ul *ngFor="let li of lista">
+    <li>{{li.id}}</li>
+    <li>{{li.title}}</li>
+    <li>{{li.completed}}</li>
+</ul>
+</div>
+
+
+
