@@ -13,7 +13,7 @@ lista:Todo[] = [];
 
   constructor(private cardSvc:CardService){}
 
-  ngOnInit() {
-    this.cardSvc.getAll().then(res => this.lista = res)
+  ngOnInit(){
+    this.cardSvc.getAll().subscribe(data => this.lista = data)
   }
 }

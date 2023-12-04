@@ -1,55 +1,35 @@
 import { Injectable } from '@angular/core';
 import { Card } from './Modules/card';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardService {
 
-  constructor() { }
+  constructor( private http:HttpClient) { }
 
-  Url:string = "https://dummyjson.com/products";
+  apiUrl:string = "https://dummyjson.com/products";
 
-  create(elemento:Partial<Card>):Promise<Card>{
-    return fetch(this.Url,{
-      method:'POST',
-      headers:{
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify(elemento)
-    })
-    .then(res => res.json());
+  getAll():Observable<Card[]>{
+    return this.http.get<[]>(this.apiUrl);
   }
 
-  update(elemento:Card):Promise<Card>{
-    return fetch(this.Url + "/" + elemento.id,{
-      method:'PUT',
-      headers:{
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify(elemento)
-    })
-    .then(res => res.json());
+  getById(id:string):Observable<Card>{
+    return this.http.get<Card>(this.apiUrl + `/${id}`);
   }
 
-  delete(id:string):Promise<Card>{
-    return fetch(this.Url + "/" + id,{
-      method:'DELETE',
-      headers:{
-        "Content-Type":"application/json"
-      },
-    })
-    .then(res => res.json());
+  create(card:Partial<Card>):Observable<Card>{
+    return this.http.post<Card>(this.apiUrl,card)
   }
 
-  getAll():Promise<Card[]>{
-    return fetch(this.Url)
-    .then(res => res.json());
+  update(card:Card){
+    return this.http.put<Card>(this.apiUrl + `/${card.id}`,card);
   }
 
-  getById(id:string):Promise<Card>{
-    return fetch(this.Url + "/" + id)
-   .then(res => res.json());
+  delete(id:string){
+    return this.http.delete<Card>(this.apiUrl + `/${id}`);
   }
 
 }
