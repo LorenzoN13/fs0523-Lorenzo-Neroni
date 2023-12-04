@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Todo } from '../../Modules/i-card';
 import { CardService } from '../../card.service';
 
@@ -9,11 +9,11 @@ import { CardService } from '../../card.service';
   styleUrl: './page1.component.scss'
 })
 export class Page1Component {
-lista:Todo[] = [];
+  product:Todo[] = [];
 
   constructor(private cardSvc:CardService){}
 
   ngOnInit(){
-    this.cardSvc.getAll().subscribe(data => this.lista = data)
+    this.cardSvc.getAll().subscribe(data => this.product = data)
   }
 }

@@ -1,16 +1,13 @@
-<div *ngIf="lista.length" class="d-flex">
-  <div *ngFor="let li of lista" class="card mt-3 me-3 w-25">
-    <h5 class="card-header">Utente con l'id {{li.id}}</h5>
+<div *ngFor="let card of product">
+  <div class="w-50 mb-2">
+    <img [src]="card.thumbnail" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{li.title}}</h5>
-      <p>{{li.description}}</p>
-      <p>{{li.price}}</p>
-      <p>{{li.rating}}</p>
-      <p>{{li.stock}}</p>
-      <p>{{li.brand}}</p>
-      <p>{{li.category}}</p>
-      <p>{{li.thumbnail}}</p>
-      <p>{{li.images}}</p>
+      <h5 class="card-title">{{card.title}}</h5>
+      <p class="card-text">{{card.description}}</p>
+      <p class=" m-0 alert alert-danger" >Categoria: {{card.category}}</p>
+      <p class=" m-0 alert alert-warning" >Prezzo: {{card.price | currency: "EUR"}}</p>
+      <p class=" m-0 alert alert-success" > Quantità: {{card.stock}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </div>

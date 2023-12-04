@@ -1,35 +1,36 @@
 import { Injectable } from '@angular/core';
-import { Card } from './Modules/card';
-import { Observable } from 'rxjs';
+import { Observable, Subject, map, pipe } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Todo } from './Modules/i-card';
+
+type responseData = {
+  products: Todo[];
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardService {
+  favoritesubject: Subject<Todo> = new Subject();
+  favorite$: Observable<Todo> = this.favoritesubject.asObservable();
+
+  cartsubject: Subject<Todo> = new Subject();
+  cart$: Observable<Todo> = this.cartsubject.asObservable();
 
   constructor( private http:HttpClient) { }
 
-  apiUrl:string = "https://dummyjson.com/products";
+  apiUrl:string = "https://dummyjson.com/product";
 
-  getAll():Observable<Card[]>{
-    return this.http.get<[]>(this.apiUrl);
+  getAll(){
+    return this.http.get<responseData>(this.apiUrl)
+    .pipe(map(r => r.products));
   }
 
-  getById(id:string):Observable<Card>{
-    return this.http.get<Card>(this.apiUrl + `/${id}`);
+  addToCart(products:Todo){
+    this.cartsubject.next(products);
   }
 
-  create(card:Partial<Card>):Observable<Card>{
-    return this.http.post<Card>(this.apiUrl,card)
+  addToFavorite(products:Todo){
+    this.favoritesubject.next(products);
   }
-
-  update(card:Card){
-    return this.http.put<Card>(this.apiUrl + `/${card.id}`,card);
-  }
-
-  delete(id:string){
-    return this.http.delete<Card>(this.apiUrl + `/${id}`);
-  }
-
 }
