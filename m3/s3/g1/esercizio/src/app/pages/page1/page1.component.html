@@ -1,0 +1,16 @@
+<div *ngIf="lista.length" class="d-flex">
+  <div *ngFor="let li of lista" class="card mt-3 me-3 w-25">
+    <h5 class="card-header">Utente con l'id {{li.id}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{li.title}}</h5>
+      <p>{{li.description}}</p>
+      <p>{{li.price}}</p>
+      <p>{{li.rating}}</p>
+      <p>{{li.stock}}</p>
+      <p>{{li.brand}}</p>
+      <p>{{li.category}}</p>
+      <p>{{li.thumbnail}}</p>
+      <p>{{li.images}}</p>
+    </div>
+  </div>
+</div>

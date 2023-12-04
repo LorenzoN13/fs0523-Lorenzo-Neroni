@@ -15,7 +15,6 @@ export class CreateComponent {
 
   ngOnInit(){
     this.todosSvc.getAll().then( elementi => this.lista = elementi)
-    
   }
 
 
