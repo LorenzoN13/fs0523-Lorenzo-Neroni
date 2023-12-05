@@ -1,1 +1,29 @@
-<p>page1 works!</p>
+<form [formGroup]="form">
+  <input type="text" class="form-control" formControlName="nome" placeholder="Il tuo Nome">
+
+  <input type="text" class="form-control" formControlName="cognome" placeholder="Il tuo cognome">
+
+  <div formGroupName="autenticazione">
+    <input type="text" formControlName="username" placeholder="Scrivi qui la il tuo username" class="form-control">
+
+    <input type="password" formControlName="password" placeholder="Scrivi la password" class="form-control">
+    <input type="password" formControlName="confermaPassword" placeholder="Scrivi qui la conferma password" class="form-control">
+  </div>
+  <h4>Genere:</h4>
+  <div class="form-group">
+    <div class="form-check" *ngFor="let g of generi">
+      <input [id]="g" [value]="g" class="form-check-input" type="radio" formControlName="genere">
+      <label [for]="g">{{g}}</label>
+    </div>
+  </div>
+
+  <input type="file" class="form-control" formControlName="file">
+
+  <textarea type="textarea" formControlName="textarea" placeholder="Scrivi la tua biografia" class="form-control">
+  </textarea>
+
+  <button (click)="send()" class="btn btn-primary">Invia</button>
+  <div class="alert alert-warning">
+    Devi compilare tutti i campi
+  </div>
+</form>
