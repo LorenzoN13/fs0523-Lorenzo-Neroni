@@ -1,29 +1,35 @@
 <form [formGroup]="form">
-  <input type="text" class="form-control" formControlName="nome" placeholder="Il tuo Nome">
+  <label for="nome" class="form-label">Inserisci il nome:</label>
+  <input type="text" id="nome" class="form-control" formControlName="nome" placeholder="Il tuo Nome">
   <div *ngIf="!isValid('nome') && isTouched('nome')" class="alert alert-danger">
     Devi inserire il tuo nome
   </div>
 
-  <input type="text" class="form-control" formControlName="cognome" placeholder="Il tuo cognome">
+  <label for="cognome" class="form-label">Inserisci il cognome: </label>
+  <input type="text" id="cgnome" class="form-control" formControlName="cognome" placeholder="Il tuo cognome">
   <div *ngIf="!isValid('cognome') && isTouched('cognome')" class="alert alert-danger">
     Devi inserire il tuo cognome
   </div>
 
   <div formGroupName="autenticazione">
-    <input type="text" formControlName="username" placeholder="Scrivi qui la il tuo username" class="form-control">
-    <div *ngIf="!isValid('username') && isTouched('username')" class="alert alert-danger">
+    <label for="username" class="form-label">Inserisci il username:</label>
+    <input type="text" id="username" formControlName="username" placeholder="Scrivi qui la il tuo username" class="form-control">
+    <div *ngIf="!isValid('autenticazione.username') && isTouched('autenticazione.username')" class="alert alert-danger">
       Devi inseriri il tuo username
     </div>
 
-    <input type="password" formControlName="password" placeholder="Scrivi la password" class="form-control">
+    <label for="password" class="form-label">Inserisci la password:</label>
+    <input type="password" id="password" formControlName="password"  placeholder="Scrivi la password" class="form-control">
     <div *ngIf="!isValid('autenticazione.password') && isTouched('autenticazione.password')" class="alert alert-danger">
       Devi inserire la tua password
     </div>
 
-    <input type="password" formControlName="confermaPassword" placeholder="Scrivi qui la conferma password" class="form-control">
+    <label for="confermaPassword" class="form-label">Conferma la password:</label>
+    <input type="password" id="confermaPassword" formControlName="confermaPassword" placeholder="Scrivi qui la conferma password" class="form-control">
     <div *ngIf="!isValid('autenticazione.confermaPassword') && isTouched('autenticazione.confermaPassword')" class="alert alert-danger">
       Devi inserire la tua password
     </div>
+
     <div *ngIf="!isTheSame('autenticazione.password','autenticazione.confermaPassword')" class="alert alert-danger">
        Il tuo conferma password non coincide con la tua password
     </div>
@@ -36,12 +42,18 @@
     </div>
   </div>
 
-  <input type="file" class="form-control" formControlName="file">
-  <div *ngIf="!isValid('file') && isTouched('file')" class="alert alert-danger">
-    Devi inserire un file
+  <div class="mb-3">
+    <label for="url" class="form-label">Inserisci un'Url </label>
+    <div class="input-group">
+      <input type="text" formControlName="Url" class="form-control" id="url" aria-describedby="basic-addon3 basic-addon4">
+    </div>
+  </div>
+  <div *ngIf="!isValid('Url') && isTouched('Url')" class="alert alert-danger">
+    Devi inserire un Url
   </div>
 
-  <textarea type="textarea" formControlName="textarea" placeholder="Scrivi la tua biografia" class="form-control">
+  <label for="textarea" class="form-label">Inserisci una biografia:</label>
+  <textarea type="textarea" id="textarea" formControlName="textarea" placeholder="Scrivi la tua biografia" class="form-control">
   </textarea>
   <div *ngIf="!isValid('textarea') && isTouched('textarea')" class="alert alert-danger">
     Devi inserire la tua biografia

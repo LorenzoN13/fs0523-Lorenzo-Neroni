@@ -28,10 +28,11 @@ export class Page1Component {
         confermaPassword: this.formBuild.control(null,[Validators.required])
       }),
       genere: this.formBuild.control(null),
-      file: this.formBuild.control(null),
+      Url: this.formBuild.control(null),
       textarea: this.formBuild.control(null)
     });
   }
+
 
   send(){
     console.log(this.form.value);
