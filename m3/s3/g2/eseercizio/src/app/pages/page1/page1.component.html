@@ -1,13 +1,32 @@
 <form [formGroup]="form">
   <input type="text" class="form-control" formControlName="nome" placeholder="Il tuo Nome">
+  <div *ngIf="!isValid('nome') && isTouched('nome')" class="alert alert-danger">
+    Devi inserire il tuo nome
+  </div>
 
   <input type="text" class="form-control" formControlName="cognome" placeholder="Il tuo cognome">
+  <div *ngIf="!isValid('cognome') && isTouched('cognome')" class="alert alert-danger">
+    Devi inserire il tuo cognome
+  </div>
 
   <div formGroupName="autenticazione">
     <input type="text" formControlName="username" placeholder="Scrivi qui la il tuo username" class="form-control">
+    <div *ngIf="!isValid('username') && isTouched('username')" class="alert alert-danger">
+      Devi inseriri il tuo username
+    </div>
 
     <input type="password" formControlName="password" placeholder="Scrivi la password" class="form-control">
+    <div *ngIf="!isValid('autenticazione.password') && isTouched('autenticazione.password')" class="alert alert-danger">
+      Devi inserire la tua password
+    </div>
+
     <input type="password" formControlName="confermaPassword" placeholder="Scrivi qui la conferma password" class="form-control">
+    <div *ngIf="!isValid('autenticazione.confermaPassword') && isTouched('autenticazione.confermaPassword')" class="alert alert-danger">
+      Devi inserire la tua password
+    </div>
+    <div *ngIf="!isTheSame('autenticazione.password','autenticazione.confermaPassword')" class="alert alert-danger">
+       Il tuo conferma password non coincide con la tua password
+    </div>
   </div>
   <h4>Genere:</h4>
   <div class="form-group">
@@ -18,12 +37,15 @@
   </div>
 
   <input type="file" class="form-control" formControlName="file">
+  <div *ngIf="!isValid('file') && isTouched('file')" class="alert alert-danger">
+    Devi inserire un file
+  </div>
 
   <textarea type="textarea" formControlName="textarea" placeholder="Scrivi la tua biografia" class="form-control">
   </textarea>
-
-  <button (click)="send()" class="btn btn-primary">Invia</button>
-  <div class="alert alert-warning">
-    Devi compilare tutti i campi
+  <div *ngIf="!isValid('textarea') && isTouched('textarea')" class="alert alert-danger">
+    Devi inserire la tua biografia
   </div>
+
+  <button [disabled]="form.invalid" (click)="send()" class="btn btn-primary">Invia</button>
 </form>

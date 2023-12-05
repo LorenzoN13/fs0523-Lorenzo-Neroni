@@ -31,5 +31,26 @@ export class Page1Component {
       file: this.formBuild.control(null),
       textarea: this.formBuild.control(null)
     });
-    }
+  }
+
+  send(){
+    console.log(this.form.value);
+    this.form.reset()
+  }
+
+  isValid(nomeDelCampo:string){
+    return this.form.get(nomeDelCampo)?.valid
+  }
+
+  isTouched(nomeDelCampo:string){
+    return this.form.get(nomeDelCampo)?.touched
+  }
+
+  isValidAndTouched(nomeDelCampo:string){
+    return this.isValid(nomeDelCampo) && this.isTouched(nomeDelCampo)
+  }
+
+  isTheSame(password:string,confermaPassword:string){
+    return this.form.get(password)?.value === this.form.get(confermaPassword)?.value
+  }
 }
