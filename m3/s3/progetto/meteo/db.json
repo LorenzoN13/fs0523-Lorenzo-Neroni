@@ -1,4 +1,11 @@
 {
-"users":[],
-"favorites":[]
+  "users": [
+    {
+      "email": "lorenzoneroni13@gmail.com",
+      "password": "$2a$10$2KDcEqKY.2CFmRmP20H.hOAsjWiWJAopxDpO33zxhyiMB8RrTzeRi",
+      "nome": "lorenzo",
+      "id": 1
+    }
+  ],
+  "favorites": []
 }

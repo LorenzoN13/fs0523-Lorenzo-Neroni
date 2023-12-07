@@ -1,0 +1,22 @@
+<div>
+  <h1>Applicazione Meteo</h1>
+
+  <form>
+    <input type="name" name="cityName" placeholder="Enter a city name" [(ngModel)]="city">
+    <button type="button" (click)="getWeather()">Invia</button>
+  </form>
+
+  <div *ngIf="weatherData">
+    <h2>{{weatherData.name}}</h2>
+    <p>Temperatura: {{weatherData.main.temp}}</p>
+    <p>Temperatura Min:{{weatherData.main.temp_min}}</p>
+    <p>Temperatura Max:{{weatherData.main.temp_max}}</p>
+    <p>Pressione:{{weatherData.main.pressure}}</p>
+    <p>Umiditità:{{weatherData.main.humidity}}</p>
+    <p>Livello del mare: {{weatherData.main.sea_level}}</p>
+    <p>{{weatherData.main.grnd_level}}</p>
+    <p>Velocita del vento:{{weatherData.wind.speed}}</p>
+    <p>vento gradiento gradi:{{weatherData.wind.deg}}</p>
+    <p>{{weatherData.wind.gust}}</p>
+  </div>
+</div>
