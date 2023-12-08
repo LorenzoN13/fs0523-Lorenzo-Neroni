@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { MeteoService } from './pages/meteo/meteo.service';
+import { MeteoService } from './pages/homeMeteo/meteo.service';
 
 @NgModule({
   declarations: [

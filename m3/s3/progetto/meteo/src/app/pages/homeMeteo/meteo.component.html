@@ -1,10 +1,11 @@
-<div>
+<div class="text-center">
   <h1>Applicazione Meteo</h1>
 
-  <form class="form">
-    <input type="name" name="cityName" placeholder="Enter a city name" [(ngModel)]="city">
-    <button type="button" (click)="getWeather()">Invia</button>
+  <form class="form d-flex justify-content-center">
+    <input type="name" class="form-control name w-50" name="cityName" placeholder="Enter a city name" [(ngModel)]="city">
+    <button type="button" class="btn btn-outline-secondary bottone" (click)="getWeather()">Invia</button>
   </form>
+</div>
 
   <div *ngIf="weatherData">
     <h2>{{weatherData.name}}</h2>
@@ -19,4 +20,3 @@
     <p>vento gradiento gradi:{{weatherData.wind.deg}}</p>
     <p>Vento gradi: {{weatherData.wind.gust}}</p>
   </div>
-</div>
