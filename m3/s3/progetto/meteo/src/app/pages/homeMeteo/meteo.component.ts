@@ -9,6 +9,7 @@ import { Todo } from './Modules/imeteo';
 })
 export class MeteoComponent {
   city!:string
+  lang:string = 'it_IT'
   weatherData: any
 
   constructor(private meteoSvc:MeteoService){}
@@ -17,9 +18,8 @@ export class MeteoComponent {
 
   ngOnInit(){}
 
-
   getWeather() {
-    this.meteoSvc.getWeather(this.city)
+    this.meteoSvc.getWeather(this.city, this.lang)
     .subscribe(data => {
       this.weatherData = data;
       console.log(data);

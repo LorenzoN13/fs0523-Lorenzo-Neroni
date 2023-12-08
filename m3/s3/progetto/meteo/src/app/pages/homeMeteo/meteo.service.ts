@@ -12,8 +12,8 @@ export class MeteoService {
 
   constructor(private http:HttpClient) { }
 
-  getWeather(city:string) {
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=it&appid=${this.apiKey}&units=metric`)
+  getWeather(citta:string,lang:string) {
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${citta}&${lang}&appid=${this.apiKey}&units=metric`)
   }
 
 }
