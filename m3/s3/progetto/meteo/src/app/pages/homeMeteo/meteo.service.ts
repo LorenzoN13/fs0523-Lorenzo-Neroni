@@ -9,9 +9,11 @@ export class MeteoService {
 
   apiKey = environment.apiKey
 
+
   constructor(private http:HttpClient) { }
 
   getWeather(city:string) {
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`)
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=it&appid=${this.apiKey}&units=metric`)
   }
+
 }
