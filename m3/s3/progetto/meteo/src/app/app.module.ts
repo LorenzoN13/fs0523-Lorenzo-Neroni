@@ -9,7 +9,7 @@ import { MeteoService } from './pages/homeMeteo/meteo.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
