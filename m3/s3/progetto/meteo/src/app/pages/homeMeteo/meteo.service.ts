@@ -16,4 +16,6 @@ export class MeteoService {
     return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${citta}&${lang}&appid=${this.apiKey}&units=metric`)
   }
 
+  
+
 }

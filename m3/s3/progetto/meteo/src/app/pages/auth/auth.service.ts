@@ -67,13 +67,13 @@ export class AuthService {
 
   restoreUser(){
 
-      const userJson:string|null =  localStorage.getItem('accessData');
-      if(!userJson) return;
+    const userJson:string|null =  localStorage.getItem('accessData');
+    if(!userJson) return;
 
-      const accessData:IAccessoDati = JSON.parse(userJson);
-      if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return;
+    const accessData:IAccessoDati = JSON.parse(userJson);
+    if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return;
 
-      this.authSubject.next(accessData)
-      this.autoLogout(accessData.accessToken)
+    this.authSubject.next(accessData)
+    this.autoLogout(accessData.accessToken)
   }
 }

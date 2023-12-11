@@ -1,1 +1,60 @@
+<div class="text-center">
+  <h1>Applicazione Meteo</h1>
 
+  <form class="form d-flex justify-content-center">
+    <input type="name" class="form-control name w-50" name="cityName" placeholder="Inserisci il nome della tua città" [(ngModel)]="city">
+    <button type="button" class="btn btn-outline-secondary bottone" (click)="getWeather()">Invia</button>
+  </form>
+</div>
+<div class="card mt-3 mb-3" *ngIf="weatherData">
+  <div class="card-header">
+    <h2>Citta: {{weatherData.name}}</h2>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Latitudine: {{weatherData.coord.lat}}</li>
+    <li class="list-group-item">Longitudine: {{weatherData.coord.lon}}</li>
+    <li class="list-group-item">Nuvole: {{weatherData.clouds.all}}</li>
+    <li class="list-group-item">Vento gradi: {{weatherData.wind.deg}}</li>
+    <li class="list-group-item">Velocità del vento: {{weatherData.wind.speed}}</li>
+  </ul>
+</div>
+
+<div *ngIf="weatherData" class="text-center">
+  <h2 class="m-0">Tempo Attuale:</h2>
+</div>
+
+<div class="card mt-3" *ngIf="weatherData">
+  <ul class="list-group list-group">
+    <li class="list-group-item">Da dove si sente: {{weatherData.main.feels_like}}</li>
+    <li class="list-group-item">Umidità: {{weatherData.main.humidity}}</li>
+    <li class="list-group-item">Pressione: {{weatherData.main.pressure}}</li>
+    <li class="list-group-item">Temperatura: {{weatherData.main.temp}}</li>
+    <li class="list-group-item">Temperatura Max: {{weatherData.main.temp_max}}</li>
+    <li class="list-group-item">Temperatura Min: {{weatherData.main.temp_min}}</li>
+    <li class="list-group-item">{{weatherData.sys.country}}</li>
+  </ul>
+</div>
+
+
+<div *ngIf="weatherData">
+  <button (click)="aggiungi()"  class="btn btn-success mt-2">Aggiungi ai preferiti</button>
+</div>
+
+<h2 *ngIf="weatherData">Sezione città preferiti:</h2>
+
+<div class="card mt-3"*ngFor="let weatherData of favorites">
+  <ul class="list-group list-group">
+    <li class="list-group-item">Latitudine: {{weatherData.coord.lat}}</li>
+    <li class="list-group-item">Longitudine: {{weatherData.coord.lon}}</li>
+    <li class="list-group-item">Nuvole: {{weatherData.clouds.all}}</li>
+    <li class="list-group-item">Vento gradi: {{weatherData.wind.deg}}</li>
+    <li class="list-group-item">Velocità del vento: {{weatherData.wind.speed}}</li>
+    <li class="list-group-item">Da dove si sente: {{weatherData.main.feels_like}}</li>
+    <li class="list-group-item">Umidità: {{weatherData.main.humidity}}</li>
+    <li class="list-group-item">Pressione: {{weatherData.main.pressure}}</li>
+    <li class="list-group-item">Temperatura: {{weatherData.main.temp}}</li>
+    <li class="list-group-item">Temperatura Max: {{weatherData.main.temp_max}}</li>
+    <li class="list-group-item">Temperatura Min: {{weatherData.main.temp_min}}</li>
+    <li class="list-group-item">{{weatherData.sys.country}}</li>
+  </ul>
+</div>
